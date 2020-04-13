@@ -1,0 +1,69 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.esg_edit_form_wrapper { margin-right: 280px; }
+.easy-shortcode_page_easy-shortcode-edit { background: #fff; }
+.esg_edit_form_wrapper .form-item { margin: 10px 0; }
+.esg_edit_form_wrapper .form-item select, .form-item input { display: block; padding: 8px; width: 100%; box-shadow: none; height: auto; }
+.esg_edit_form_wrapper .form-item label { font-weight: 600; padding-bottom: 6px; display: inline-block; }
+.esg_edit_form_wrapper .right-wrapper { position: fixed; z-index: 9; top: 0; right: 0; bottom: 0; width: 280px; border-left: 1px solid #e2e4e7; background: #fff; color: #555d66; height: 100vh; overflow: hidden; padding: 60px 20px 0; }
+.esg_edit_form_wrapper .right-wrapper { overflow-y: auto; }
+
+.esg_edit_form_wrapper .left-wrapper { }
+.esg_edit_form_wrapper .esg_edit_form { max-width: 900px; margin: 0 auto; }
+.flex-row { display: flex; }
+.tokens .flex-row li { padding: 6px 16px; background: #fff; margin-right: 8px; box-shadow: 0 0 5px #00000038; border-radius: 6px; }
+.tokens .flex-row li label { display: none; }
+.trim-wrap, .paginaton-wrap { position: relative; margin-bottom: 2px; }
+.paginaton-wrap { margin-top: 20px; }
+.trim-wrap .pag-title label, .paginaton-wrap .pag-title label { background: #eee; padding: 10px 20px; display: block; margin: 0 -21px; }
+.trim-wrap .trim_count label, .paginaton-wrap .pagination_count label { display: block; padding-bottom: 6px; }
+.trim-wrap .trim_count, .paginaton-wrap .pagination_count { padding: 10px 0; }
+.right-wrapper select{ cursor: pointer; }
+.shortcode-template textarea { width: 100% !important; padding: 1em; }
+#esg_list_form  .row-actions label { line-height: normal; vertical-align: 0px; }
+.easy-shortcode_page_easy-shortcode-edit .notice {margin-right: 300px;}
+.term-wrapper> label { font-weight: 600; display: inline-block; padding-bottom: 6px; }
+.button-wrapper a:focus, .button-wrapper a label { outline: none; box-shadow: none; }
+.esg-copy-shortcode.copied { color: #ff8f00; }
+
+
+/*-------------- confirmation ----------------*/
+#detete-checkbox{ display: none; }
+#esg_list_form .confirmation { position: fixed; background: #00000059; width: 100%; height: 100%; top: 0;  justify-content: center; flex-direction: column; text-align: center; left: 0; z-index: 9999; display: none; padding:1px;  }
+#esg_list_form  #detete-checkbox:checked +.confirmation{ display: block; }
+#esg_list_form .confirmation .inner { background: #fff; max-width: 400px; margin: 0 auto; padding: 20px 20px 40px; box-shadow: 0 0 30px #00000054; border-radius: 6px; margin-top:6%; }
+.confirmation .close-icon { border: 1px solid #f00; display: inline-block; width: 50px; height: 50px; border-radius: 50%; color: #f00; font-size: 45px; padding-top: 6px; }
+.close-icon { position: relative; }
+.confirmation .close-icon:before, .confirmation .close-icon:after { content: ''; display: block; width: 30px; height: 1px; background: #f00; position: absolute; top: 23px; left: 10px; }
+.confirmation .close-icon:before { -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+.confirmation .close-icon:after { -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+
+.button-wrapper a { display: inline-block; text-decoration: none; }
+.button-wrapper a label { line-height: normal; vertical-align: top; }
+.button-wrapper a.esg-pop-delete { background: #0085ba; border-color: #0073aa #006799 #006799; box-shadow: 0 2px 0 #006799; color: #fff; text-decoration: none; text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799; padding: 6px 20px; border-radius: 6px; }
+.esg-pop-cancel label { color: #dc3232; padding: 6px 20px; }
+.esg-pop-cancel label:hover { color: #f00;}
+
+/*------ loader ----*/
+.right-wrapper .loader { min-height: 50px; background: #fff; top: 0; left: 0; bottom: 0; right: 0; z-index: 9; }
+.right-wrapper .loader:after { content: ''; background: none; display: block; width: 20px; height: 20px; border-radius: 50%; border: 2px solid #006799; border-top-color: transparent; -webkit-animation: spin .6s linear infinite; animation: spin .6s linear infinite; z-index: 99; position: relative; margin: 20px auto 0; }
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@keyframes spin {
+	0% { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@media(max-width: 740px){
+	.esg_edit_form_wrapper .right-wrapper { position: relative; width: 100%; height: auto; top: auto; right: auto; bottom: auto; border: none; }
+.esg_edit_form_wrapper { margin-right: auto; }
+.esg_edit_form_wrapper .right-wrapper {padding: 20px 0;}
+.easy-shortcode_page_easy-shortcode-edit .notice {margin-right: 0;}
+
+}
